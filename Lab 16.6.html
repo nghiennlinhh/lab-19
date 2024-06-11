@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 16.6</title>
+</head>
+<body>
+  <script>
+    // lab 16.6.1 Dữ liệu 1
+    const dolphinsScore1 = 97;
+    const dolphinsScore2 = 112;
+    const dolphinsScore3 = 101;
+
+    const koalasScore1 = 109;
+    const koalasScore2 = 95;
+    const koalasScore3 = 106;
+
+    const dolphinsScoreAverage = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3)/3;
+    const koalasScoreAverage = (koalasScore1 + koalasScore2 + koalasScore3)/3;
+    
+    if(dolphinsScoreAverage > koalasScoreAverage && dolphinsScoreAverage>= 100){
+      console.log (`Dolphins Win`)
+    }else if(dolphinsScoreAverage < koalasScoreAverage && koalasScoreAverage>= 100 ){
+      console.log (`Kaolas Win`)
+    }else if(dolphinsScoreAverage === koalasScoreAverage && dolphinsScoreAverage>= 100){
+      console.log(`Dolphins draw Kaolas`)
+    }else{
+      console.log(`No team won`)
+    }
+
+    // Lab16.6.2
+    const tip1 = 275;
+    console.log( 50 < tip1 < 300 ? ` The bill was ${tip1}, the tip was ${(15*tip1)/100}, and the total value ${tip1 + (15*tip1)/100}` : `The bill was ${tip1}, the tip was ${(20*tip1)/100}, and the total value ${tip1 + (20*tip1)/100}`);
+
+    const tip2 = 40;
+    console.log( 50 < tip2 < 300 ? ` The bill was ${tip2}, the tip was ${(15*tip2)/100}, and the total value ${tip2 + (15*tip2)/100}` : `The bill was ${tip2}, the tip was ${(20*tip2)/100}, and the total value ${tip2 + (20*tip2)/100}`);
+    
+    const tip3 = 430;
+    console.log( 50 < tip3 < 300 ? ` The bill was ${tip3}, the tip was ${(15*tip3)/100}, and the total value ${tip3 + (15*tip3)/100}` : `The bill was ${tip3}, the tip was ${(20*tip3)/100}, and the total value ${tip3 + (20*tip3)/100}`);
+
+
+  </script>
+</body>
+</html>

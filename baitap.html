@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // bai 1
+    const getAge = (year) => 2024 - year  ;
+    const age = getAge(1997);
+    console.log(age);
+
+    // bai 2
+    function stringtoArrry(str){
+      return str.split('');
+    }
+    const exampleString = 'Hello, My name Linh.';
+    const result = stringtoArrry(exampleString);
+    console.log(result);
+
+    // bai 3
+    function removeFirstElement(arr){
+      arr.shift(0);
+    }
+    const exampleArry = ['Hello,', ' My', 'name', 'Linh.'];
+    removeFirstElement(exampleArry);
+    console.log(exampleArry);
+
+    // bai 4
+    function mergeArry(arr1, arr2){
+      return arr1.concat(arr2)
+    }
+    const array1 = [1, 2, 3, 4, 5];
+    const array2 = [6, 7, 8, 10];
+    let mergedArry = mergeArry(array1,array2);
+    console.log(mergedArry);
+
+    // bai 5
+    function contains(arr, value) { 
+      console.log(arr.includes(value))
+    };
+    const arr = [ 1 ,2 ,3 , 4, 6, 7];
+    const value = 99;
+    contains(arr, value);
+
+    // bai 6
+    function getLastElement(arr){
+      return (arr[arr.length - 1])
+    }
+    const getLastElementOfArry = [ 1, 2, 3, 4, 100 ]
+    const resultbt6 = getLastElement(getLastElementOfArry);
+    console.log(resultbt6);
+
+    // bai 7
+    function  getMaxNumber (a, b, c){
+      return Math.max(a, b, c)
+    }
+    const resultbat7 = getMaxNumber(100, 56, 20000);
+    console.log(resultbat7);
+
+    // bang cuu chuong
+   for (let i = 1; i <= 10; i++){
+    for (let x = 1; x <=10 ; x++)
+    console.log(`${i} * ${x} = ${i * x}`)
+   }
+
+  //  bai 1
+   
+   const array = [1, 2, 3, 4, 5, 6 ,15 , 7, 8, 6];
+   function sumArray(arr){
+    let sum = 0;
+    for ( let i = 0; i < arr.length; i++ ){
+      sum += arr[i];
+    }
+    return sum
+   }
+   const sumArr = sumArray(array);
+   console.log(sumArr);
+   
+  //  bai 2
+
+  function largestNumber(arr){
+    let max = arr[0];
+    for ( let i = 1; i < arr.length; i++ ){
+      if(arr[i] > max){
+        max = arr[i]
+      } 
+    }
+    return max;
+  }
+  console.log(largestNumber(array));
+
+  // bai 3
+  function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+  const resultb3 = reverseString(exampleString);
+  console.log(resultb3);
+ 
+  //  bai 4
+  const linh = {
+    name: 'linh',
+    age: 26,
+    height: 1.60,
+    weight: 49,
+  }
+  function hasProperty(obj, prop) {
+  //  return obj.hasOwnProperty(prop);
+  if(obj[prop]){
+    return true
+  }else {
+    return false
+  }
+  }
+  console.log(hasProperty(linh,"hhh" ));
+ 
+  // bai 5
+
+  function multiplyAll(arr) {
+    multiply = 1;
+    for( let i = 0; i < arr.length; i++){
+      multiply *= arr[i]
+    }
+    return multiply;
+  }
+  console.log(multiplyAll(array));
+
+  //  bai 6
+
+  function fillterEven(num) {
+    let resultb6 = [];
+
+    for( let i = 0; i < num.length; i++){
+      if(num[i] % 2 === 0){
+        resultb6.push(num[i])
+      }
+    }
+    return resultb6;
+  }
+  console.log(fillterEven(array));
+
+  // bai 7
+
+  function mergeArrys4( arr1, arr2, arr3){
+    return arr1.concat(arr2, arr3)
+  }
+  let resultb8 = mergeArrys4(array1, array2 ,array)
+  console.log(resultb8);
+
+  // bai 9
+  function findMissing(arr){
+    for( let i = 0; i < arr.length; i++){
+      if(( arr[i] + 1) !== (arr[i + 1])){
+        console.log(arr[i] + 1) 
+        break;
+      }
+    }
+  }
+  findMissing(array2);
+  </script>
+</body>
+</html>

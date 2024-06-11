@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab18.1-3</title>
+</head>
+<body>
+ <script>
+  // lab18.1
+
+  const myCountry = {
+    country: 'Vietnam',
+    capital: 'Hanoi',
+    language: 'Vietnamese',
+    population: 100000000,
+    neighbours: [ 'China','Laos','Campuchia'],
+    describe: function() {
+     console.log(`${this.country} has ${this.population} million finnish-speaking people, ${this.neighbours.length} neighbouring countries and a captial called ${this.capital}`)
+    }
+  }
+
+  // lab18.2
+
+  console.log(`${myCountry.country} has ${myCountry.population} million finnish-speaking people, ${myCountry.neighbours.length} neighbouring coutries and a capital called ${myCountry.capital}. `)
+  myCountry.population += 2000000;
+  console.log(myCountry.population);
+
+  myCountry['population'] -= 2000000;
+  console.log(myCountry.population);
+  
+
+  // lab18.3
+  myCountry.describe();
+  
+ </script>
+</body>
+</html>

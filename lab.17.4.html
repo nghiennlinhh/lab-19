@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function percentageOfWorld1(population) {
+     return (population / 7900000000) * 100;
+    };
+    function describeCountry(country, population, capitalCity) {
+      const percent = percentageOfWorld1(population);
+    return `${country} has ${population} mililion people which is about ${percent} of the world`;
+  }
+  
+   const vietnam = describeCountry( 'Viet Nam', 10000000, 'Ha Noi');
+   const japan = describeCountry( 'Japan', 30000000, 'Tokyo');
+   const korea = describeCountry( 'Korea', 37000000, 'Seoul');
+
+   console.log(vietnam);
+   console.log(japan);
+   console.log(korea);
+
+  </script>
+</body>
+</html>

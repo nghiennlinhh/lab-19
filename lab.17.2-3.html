@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab17.2-3</title>
+</head>
+<body>
+  <script>
+    // lab17.2
+
+    function percentageOfWorld1(population) {
+     return (population / 7900000000) * 100;
+    };
+    const vietnam = percentageOfWorld1(100000000);
+    const india = percentageOfWorld1(1428000000);
+    const rusia = percentageOfWorld1(1460000000);
+
+    console.log(`Việt Nam có 100000000 chiếm ${vietnam}% dân số thế giới.`);
+    console.log(`Ấn Độ có 1428000000 chiếm ${india}% dân số thế giới.`);
+    console.log(`Nga có 1460000000 chiếm ${rusia}% dân số thế giới.`);
+
+    // Hàm biểu thức
+    const percentageOfWorld2 = function (population) {
+      return (population / 7900000000) * 100;
+    };
+    const anh = percentageOfWorld2(100000000);
+    const my = percentageOfWorld2(1428000000);
+    const canada = percentageOfWorld2(1460000000);
+
+    console.log(`Anh có 100000000 chiếm ${anh}% dân số thế giới.`);
+    console.log(`Mý có 1428000000 chiếm ${my}% dân số thế giới.`);
+    console.log(`Canada có 1460000000 chiếm ${canada}% dân số thế giới.`);
+
+
+    // lab17.3
+    const percentageOfWorld3 = (population) => (population / 7900000000) * 100;
+
+    const malaysia = percentageOfWorld1(100000000);
+    const thailand = percentageOfWorld1(1428000000);
+    const indonesia = percentageOfWorld1(1460000000);
+
+    console.log(`Malaysia có 100000000 chiếm ${vietnam}% dân số thế giới.`);
+    console.log(`Thái Lan có 1428000000 chiếm ${india}% dân số thế giới.`);
+    console.log(`Indonesia có 1460000000 chiếm ${rusia}% dân số thế giới.`);
+
+  </script>
+</body>
+</html>

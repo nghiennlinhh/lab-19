@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 16.2
+    // const numNeighbours = prompt('How many neighbor countries does your country have?')
+    // if (+numNeighbours === 1){
+    //   console.log('Only 1 border')
+    // }else if ( numNeighbours > 1){
+    //   console.log('More than 1 boeder')
+    // }else {
+    //   console.log('No border')
+    // }
+  //  khi đổi == thành === sẽ thức hiện kiểm tra giá trị 
+  // và kiểu dữ liệu giá trị của numNeightbours của hàm prompt là string,
+  // giá trị so sánh là number nên không thể bằng nhau 
+  // Sau khi chuyển đổi kiểu kiểu dư liệu của numNeightbours thành number thì chúng ta có thể sử dụng toán tử === để so sánh
+
+  // lab.16.3
+  const  language = prompt('Bạn muuốn sống ở quốc gia nói ngôn ngữ nào?');
+  const  population = prompt('Bạn muuốn sống ở quốc gia có dân số là bao nhiêu?');
+  const  isIsland = prompt('Bạn muuốn sống ở quốc gia có phải đảo không?');
+  
+  if( language === 'English' && population < 50000000 && Boolean(isIsland)){
+    console.log(`You should live in ${language} :)`)
+  }else {
+    console.log( `${language} dose not meet your criteria :(`)
+  }
+  
+  
+   </script>
+</body>
+</html>

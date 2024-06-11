@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab15.6</title>
+</head>
+<body>
+  <script>
+    // 15.6.1
+    const heightMark = 1.69;
+    const massMark = 78;
+    const heightJohn = 1.95;
+    const massJohn = 92;
+
+    const BMIMark = massMark / (heightMark * heightMark);
+    console.log(BMIMark)
+    const BMIJohn = massJohn / (heightJohn * heightJohn);
+    console.log(BMIJohn)
+    
+    let markHigherBMI = BMIMark > BMIJohn;
+    console.log(markHigherBMI)
+
+    // 15.6.2
+    if(BMIMark > BMIJohn){
+      console.log(`Mark's BMI(${BMIMark}) is higher than John's(${BMIJohn})!`);
+    } else{
+      console.log(`John's BMI(${BMIJohn}) is higher than Mark's(${BMIMark})!`)
+    }
+  </script>
+</body>
+</html>
